@@ -1,13 +1,12 @@
 'use client'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Mail, Phone, MessageCircle, ArrowRight, Sparkles, Play, Calendar } from 'lucide-react'
+import { Mail, Phone, MessageCircle, ArrowRight, Sparkles, Calendar } from 'lucide-react'
 import { FaLocationArrow } from 'react-icons/fa'
-import Link from 'next/link'
 
 export default function CTA() {
   const ref = useRef(null)
-  const [hoveredCard, setHoveredCard] = useState(null)
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -125,7 +124,7 @@ export default function CTA() {
           >
             <Sparkles className="w-4 h-4 text-purple-500" />
             <span className="text-sm font-medium text-purple-700 dark:text-purple-600">
-              Let's Create Together
+              Let{"'"}s Create Together
             </span>
           </motion.div>
 
@@ -138,7 +137,7 @@ export default function CTA() {
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-500 leading-relaxed max-w-3xl mx-auto">
             Whether you need captivating animations, engaging motion graphics, or complete visual
-            storytelling, I'm here to transform your ideas into stunning animated experiences.
+            storytelling, I{"'"}m here to transform your ideas into stunning animated experiences.
           </p>
         </motion.div>
 
@@ -254,8 +253,8 @@ export default function CTA() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                From concept to completion, let's collaborate to create animations that captivate,
-                engage, and leave a lasting impression on your audience.
+                From concept to completion, let{"'"}s collaborate to create animations that
+                captivate, engage, and leave a lasting impression on your audience.
               </motion.p>
 
               <motion.div

@@ -1,7 +1,7 @@
 'use client'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import { useRef } from 'react'
-import { Palette, Zap, Users, Target, PlayCircle, Sparkles } from 'lucide-react'
+import { Users, Target, PlayCircle, Sparkles } from 'lucide-react'
 
 export default function About() {
   const ref = useRef(null)
@@ -12,7 +12,6 @@ export default function About() {
 
   // Parallax base transforms
   const rawY = useTransform(scrollYProgress, [0, 1], [40, 0])
-  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   // Smooth them out with spring physics
   const y = useSpring(rawY, {
@@ -21,24 +20,15 @@ export default function About() {
     mass: 0.5,
   })
 
-  const opacity = useSpring(rawOpacity, {
-    stiffness: 100,
-    damping: 25,
-    mass: 0.5,
-  })
-
-  // Staggered animation for cards
   const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: (i) => ({
+    hidden: { opacity: 0 },
+    visible: {
       opacity: 1,
-      y: 0,
       transition: {
-        delay: i * 0.2,
-        duration: 0.6,
-        ease: 'easeOut',
+        staggerChildren: 0.3,
+        delayChildren: 0.2,
       },
-    }),
+    },
   }
 
   // Stats data
@@ -47,28 +37,6 @@ export default function About() {
     { number: '50+', label: 'Happy Clients', icon: Users },
     { number: '5+', label: 'Years Experience', icon: Target },
     { number: '24/7', label: 'Creative Process', icon: Sparkles },
-  ]
-
-  // Services data
-  const services = [
-    {
-      icon: Palette,
-      title: 'Creative Vision',
-      description:
-        'Transforming ideas into compelling visual narratives that captivate and inspire audiences.',
-    },
-    {
-      icon: Zap,
-      title: 'Technical Excellence',
-      description:
-        'Cutting-edge animation techniques combined with industry-standard tools for exceptional results.',
-    },
-    {
-      icon: Users,
-      title: 'Collaborative Spirit',
-      description:
-        'Working closely with clients to bring their vision to life through seamless communication.',
-    },
   ]
 
   return (

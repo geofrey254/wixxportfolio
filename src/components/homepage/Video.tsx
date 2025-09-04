@@ -14,7 +14,6 @@ export function Video() {
 
   // Parallax base transforms
   const rawY = useTransform(scrollYProgress, [0, 1], [40, 0])
-  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   // Smooth them out with spring physics
   const y = useSpring(rawY, {

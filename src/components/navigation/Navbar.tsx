@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { ModeToggle } from './ThemeChange'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
-import { Modak } from 'next/font/google'
 
 export default function Navbar() {
   const { theme } = useTheme()

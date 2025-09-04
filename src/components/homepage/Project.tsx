@@ -8,8 +8,9 @@ import Link from 'next/link'
 
 export default function Projects() {
   const ref = useRef(null)
-  const [selectedProject, setSelectedProject] = useState(null)
-  const [hoveredProject, setHoveredProject] = useState(null)
+  type ProjectType = (typeof projects)[number]
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null)
+  const [hoveredProject, setHoveredProject] = useState<ProjectType | null>(null)
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,18 +19,11 @@ export default function Projects() {
 
   // Parallax base transforms
   const rawY = useTransform(scrollYProgress, [0, 1], [60, 0])
-  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   // Smooth them out with spring physics
   const y = useSpring(rawY, {
     stiffness: 80,
     damping: 20,
-    mass: 0.5,
-  })
-
-  const opacity = useSpring(rawOpacity, {
-    stiffness: 100,
-    damping: 25,
     mass: 0.5,
   })
 
@@ -93,7 +87,7 @@ export default function Projects() {
     },
   ]
 
-  const handleVideoClick = (url) => {
+  const handleVideoClick = (url: string) => {
     window.open(url, '_blank')
   }
 

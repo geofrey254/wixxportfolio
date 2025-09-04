@@ -1,8 +1,7 @@
 'use client'
 import { useState, useEffect, useMemo } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { useTheme } from 'next-themes'
 import { Caesar_Dressing } from 'next/font/google'
 
 const inter = Caesar_Dressing({
@@ -11,15 +10,11 @@ const inter = Caesar_Dressing({
 })
 
 export default function Hero() {
-  const { theme } = useTheme()
   const [isVisible, setIsVisible] = useState(false)
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [currentText, setCurrentText] = useState('')
   const [isDeleting, setIsDeleting] = useState(false)
   const [charIndex, setCharIndex] = useState(0)
-
-  const { scrollY } = useScroll()
-  const parallaxY = useTransform(scrollY, [0, 1000], [0, -100])
 
   // Array of texts to cycle through
   const animationTypes = useMemo(

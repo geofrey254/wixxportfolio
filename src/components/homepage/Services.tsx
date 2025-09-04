@@ -8,7 +8,6 @@ import {
   Video,
   Sparkles,
   Zap,
-  ArrowRight,
   Clock,
   Users,
   Award,
@@ -18,12 +17,11 @@ import {
   Hexagon,
 } from 'lucide-react'
 import { FaLocationArrow } from 'react-icons/fa'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Services() {
   const ref = useRef(null)
-  const [hoveredService, setHoveredService] = useState(null)
+  const [hoveredService, setHoveredService] = useState<number | null>(null)
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -32,17 +30,10 @@ export default function Services() {
 
   // Parallax transforms with spring physics
   const rawY = useTransform(scrollYProgress, [0, 1], [60, 0])
-  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   const y = useSpring(rawY, {
     stiffness: 80,
     damping: 20,
-    mass: 0.5,
-  })
-
-  const opacity = useSpring(rawOpacity, {
-    stiffness: 100,
-    damping: 25,
     mass: 0.5,
   })
 
@@ -364,7 +355,7 @@ export default function Services() {
               {/* Enhanced Features with icons */}
               <div className="mb-6">
                 <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide">
-                  What's Included:
+                  What{"'"}s Included:
                 </h4>
                 <div className="grid grid-cols-1 gap-2">
                   {service.features.map((feature, featureIndex) => (
