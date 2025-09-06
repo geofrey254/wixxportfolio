@@ -2,6 +2,7 @@ import './styles.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/navigation/Navbar'
 import { Michroma } from 'next/font/google'
+import Footer from '@/components/navigation/Footer'
 
 const modak = Michroma({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
           <main>
             <Navbar />
             {children}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

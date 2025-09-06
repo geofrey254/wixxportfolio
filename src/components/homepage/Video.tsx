@@ -35,11 +35,11 @@ export function Video() {
         playsInline
         muted
         loop
-        className="w-full h-[40vh] md:h-[80vh] object-cover"
+        className="w-full h-[40vh] md:h-[120vh] object-cover"
       >
         <source src="/videos/vid.mp4" type="video/mp4" />
       </video>
-      <div className="absolute bottom-0 right-0">
+      <div className="absolute bottom-8 right-0">
         {theme === 'light' ? (
           <Image
             src="/images/bg2.png"
