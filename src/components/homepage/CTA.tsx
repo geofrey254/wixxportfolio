@@ -14,17 +14,10 @@ export default function CTA() {
   })
 
   const rawY = useTransform(scrollYProgress, [0, 1], [40, 0])
-  const rawOpacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
   const y = useSpring(rawY, {
     stiffness: 80,
     damping: 20,
-    mass: 0.5,
-  })
-
-  const opacity = useSpring(rawOpacity, {
-    stiffness: 100,
-    damping: 25,
     mass: 0.5,
   })
 
@@ -66,8 +59,8 @@ export default function CTA() {
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-500 max-w-2xl mx-auto">
-            Let's bring your vision to life with stunning animations that captivate and engage your
-            audience.
+            Let{"'"}s bring your vision to life with stunning animations that captivate and engage
+            your audience.
           </p>
         </motion.div>
 
@@ -79,7 +72,7 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {contactOptions.map((option, index) => (
+          {contactOptions.map((option) => (
             <motion.div
               key={option.id}
               className="group cursor-pointer"
@@ -120,7 +113,7 @@ export default function CTA() {
           <div className="bg-gradient-to-br from-purple-600 via-pink-500 to-blue-600 rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Start Your Animation Project</h3>
             <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
-              From concept to completion, let's collaborate to create animations that leave a
+              From concept to completion, let{"'"}s collaborate to create animations that leave a
               lasting impression.
             </p>
 
