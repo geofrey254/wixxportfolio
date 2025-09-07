@@ -26,9 +26,9 @@ export function Video() {
     <motion.section
       ref={ref}
       style={{ y }}
-      className="relative rounded-t-4xl -mt-16 md:-mt-16 bg-[#2e0057] dark:bg-gray-900 z-30 shadow-2xl overflow-hidden"
+      className="relative rounded-t-4xl -mt-16 md:-mt-16 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white  z-30 shadow-2xl overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b bg-scroll  from-[#2e0057] to-black/40 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b bg-scroll  from-[#2e0057] dark:from-gray-900 to-black/40 z-10"></div>
       <video
         preload="none"
         autoPlay

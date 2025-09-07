@@ -71,7 +71,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#2e0057] via-[#1a0033] to-black dark:from-gray-900 dark:via-gray-950 dark:to-black">
+    <footer className="relative bg-gradient-to-b from-[#2e0057] via-[#1a0033] to-black dark:from-gray-900 dark:via-gray-950 dark:to-black rounded-4xl -mt-16 dark:border-t dark:border-white z-30 shadow-2xl overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/5 dark:bg-purple-400/5 rounded-full blur-3xl"></div>
@@ -115,7 +115,6 @@ export default function Footer() {
                 )}
                 <p className="text-gray-300 dark:text-gray-400 leading-relaxed mb-6">
                   Bringing stories to life through exceptional animation and motion graphics.
-                  Creating visual experiences that captivate and inspire.
                 </p>
               </div>
 
@@ -290,9 +289,9 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               {/* Copyright */}
               <div className="flex items-center space-x-2 text-gray-400 dark:text-gray-500 text-sm">
-                <span>© 2024 YourBrand. Made with</span>
+                <span>© 2025 YourBrand. Made with</span>
                 <Heart className="w-4 h-4 text-red-400 fill-current animate-pulse" />
-                <span>by Your Team</span>
+                <span>by Maina Geofrey</span>
               </div>
             </div>
           </motion.div>

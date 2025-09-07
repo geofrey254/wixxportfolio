@@ -2,12 +2,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { Caesar_Dressing } from 'next/font/google'
-
-const inter = Caesar_Dressing({
-  subsets: ['latin'],
-  weight: ['400'],
-})
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -107,7 +101,7 @@ export default function Hero() {
       </video>
 
       {/* Parallax Gradient Overlay */}
-      <motion.div className="absolute inset-0 bg-gradient-to-t from-[#2e0057] via-black/60 to-black/40 z-10" />
+      <motion.div className="absolute inset-0 bg-gradient-to-t from-[#2e0057] dark:from-gray-900 via-black/60 to-black/40 z-10" />
 
       {/* Main Content */}
       <motion.div
@@ -118,9 +112,9 @@ export default function Hero() {
       >
         {/* Animated Typing Text */}
         <motion.div className="text-center" variants={itemVariants}>
-          <div className="text-5xl md:text-8xl 2xl:text-9xl font-light text-purple-300 h-10 flex items-center">
+          <div className="text-5xl md:text-7xl 2xl:text-9xl font-light text-purple-300 h-10 flex items-center">
             <div className="w-4 md:w-12 h-1 md:h-2 bg-white" />{' '}
-            <span className={`${inter.className} text-white font-bold w-full text-left typingtext`}>
+            <span className={`text-white font-bold w-full text-left`}>
               {currentText}
               <motion.span
                 animate={{ opacity: [1, 0] }}

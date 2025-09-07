@@ -199,7 +199,7 @@ export default function Services() {
     <motion.section
       ref={ref}
       style={{ y }}
-      className="py-20 md:py-28 -mt-20 md:-mt-20 bg-white dark:bg-gray-900 rounded-t-4xl relative z-30 shadow-2xl overflow-hidden"
+      className="py-20 md:py-28 -mt-20 md:-mt-20 bg-white dark:bg-gray-900 dark:border-t dark:border-white rounded-t-4xl relative z-30 shadow-2xl overflow-hidden"
     >
       {/* Enhanced decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">

@@ -40,7 +40,7 @@ export default function CTA() {
     <motion.section
       ref={ref}
       style={{ y }}
-      className="py-10 md:py-28 -mt-6 md:-mt-15 bg-white dark:bg-[#2e0057] rounded-t-4xl relative z-30 overflow-hidden"
+      className="py-10 md:py-28 -mt-6 md:-mt-15 bg-white dark:bg-gray-900 dark:border-t-2 dark:border-white rounded-t-4xl relative z-30 overflow-hidden"
     >
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Header */}
@@ -51,7 +51,7 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
             Ready to Create
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-600 bg-clip-text text-transparent">
               {' '}

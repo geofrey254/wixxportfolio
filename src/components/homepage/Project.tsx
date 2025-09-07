@@ -97,7 +97,7 @@ export default function Projects() {
     <motion.section
       ref={ref}
       style={{ y }}
-      className="py-20 md:py-28 -mt-6 md:-mt-16 bg-[#2e0057] dark:bg-gray-900 rounded-t-4xl relative z-30 shadow-2xl overflow-hidden"
+      className="py-20 md:py-28 -mt-6 md:-mt-16 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white rounded-t-4xl relative z-30 shadow-2xl overflow-hidden"
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">

@@ -88,7 +88,7 @@ export default function Logos() {
   const bottomRowDuplicated = [...bottomRowLogos, ...bottomRowLogos, ...bottomRowLogos]
 
   return (
-    <div className="bg-[#2e0057] py-16 md:py-28 -mt-20 md:-mt-20 dark:bg-gray-900 rounded-t-4xl relative z-30 shadow-2xl overflow-hidden">
+    <div className="bg-[#2e0057] py-16 md:py-28 -mt-20 md:-mt-20 dark:bg-gray-900 dark:border-t dark:border-white rounded-t-4xl relative z-30 shadow-2xl overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 dark:bg-purple-400/5 rounded-full blur-3xl"></div>
