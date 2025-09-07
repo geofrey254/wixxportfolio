@@ -82,7 +82,9 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="group relative px-4 py-2 text-white dark:text-white font-medium transition-all duration-300"
+                  className={`group relative px-4 py-2 font-medium transition-all duration-300 ${
+                    isScrolled ? 'text-gray-900 dark:text-white font-semibold' : 'text-white'
+                  }`}
                 >
                   <span className="relative z-10">{link.name}</span>
 
