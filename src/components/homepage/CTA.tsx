@@ -53,7 +53,7 @@ export default function CTA() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
             Ready to Create
-            <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#2e0057] via-pink-500 to-[#2e0057] bg-clip-text text-transparent">
               {' '}
               Something Amazing?
             </span>
@@ -82,14 +82,14 @@ export default function CTA() {
             >
               <div className="bg-white dark:bg-gray-50/80 rounded-xl p-6 border border-gray-200/50 dark:border-gray-300/30 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-[#2e0057] flex items-center justify-center">
                     <option.icon className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-800">
                     {option.title}
                   </h3>
                 </div>
-                <div className="flex items-center justify-center gap-2 text-purple-600 font-medium">
+                <div className="flex items-center justify-center gap-2 text-[#2e0057] font-medium">
                   {option.action}
                   <motion.div
                     animate={{ x: hoveredCard === option.id ? 3 : 0 }}
@@ -110,7 +110,7 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <div className="bg-gradient-to-br from-purple-600 via-pink-500 to-blue-600 rounded-2xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-br from-[#2e0057] to-[#000000] rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">Start Your Animation Project</h3>
             <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
               From concept to completion, let{"'"}s collaborate to create animations that leave a

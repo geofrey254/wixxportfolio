@@ -256,7 +256,7 @@ export default function Projects() {
 
                   {/* Watch Button */}
                   <motion.button
-                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-[#2e0057] to-[#2e0057] text-white font-medium py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer hover:bg-white/10 hover:border hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => handleVideoClick(activeProject.videoUrl)}

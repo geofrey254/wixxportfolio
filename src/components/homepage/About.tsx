@@ -61,7 +61,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#6b1fad] via-purple-600 to-blue-600 dark:from-white dark:via-white dark:to-white bg-clip-text text-transparent"
+            className="text-5xl md:text-6xl font-bold mb-6 text-[#2e0057] dark:text-white"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -100,10 +100,10 @@ export default function About() {
               viewport={{ once: true }}
               className="text-center group"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#6b1fad] to-purple-600 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#2e0057] to-[#160029] rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
                 <stat.icon className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-[#6b1fad] dark:text-white mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-[#2e0057] dark:text-white mb-2">
                 {stat.number}
               </div>
               <div className="text-gray-600 text-sm md:text-base">{stat.label}</div>

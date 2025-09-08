@@ -1,11 +1,9 @@
 'use client'
-import React, { useState } from 'react'
-import { FiAward, FiStar, FiTarget, FiZap, FiCamera } from 'react-icons/fi'
+import React from 'react'
+import { FiStar, FiZap } from 'react-icons/fi'
 import { FaTrophy } from 'react-icons/fa'
 
 export default function AwardsSection() {
-  const [activeAward, setActiveAward] = useState(0)
-
   const awards = [
     {
       year: '2024',
@@ -13,8 +11,6 @@ export default function AwardsSection() {
       organization: 'Creative Animation Awards',
       category: 'Commercial Animation',
       icon: FaTrophy,
-      color: 'from-yellow-400 to-orange-500',
-      bgColor: 'from-yellow-50 to-orange-50',
       description:
         'Recognized for outstanding motion graphics in brand storytelling and commercial animation work.',
     },
@@ -24,8 +20,7 @@ export default function AwardsSection() {
       organization: 'Digital Arts Festival',
       category: '2D Animation',
       icon: FiStar,
-      color: 'from-purple-500 to-pink-500',
-      bgColor: 'from-purple-50 to-pink-50',
+
       description:
         'Awarded for exceptional narrative techniques and character development in animated content.',
     },
@@ -57,7 +52,7 @@ export default function AwardsSection() {
           </div>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Celebrating Our
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-[#efddff] to-indigo-600">
               Creative Excellence
             </span>
           </h2>
@@ -68,23 +63,17 @@ export default function AwardsSection() {
         </div>
 
         {/* Awards Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16 px-8">
+        <div className="grid lg:grid-cols-3 gap-8 px-8">
           {awards.map((award, index) => {
-            const IconComponent = award.icon
             return (
               <div
                 key={index}
-                className={`group relative p-8 rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 transform ${
-                  activeAward === index
-                    ? `bg-gradient-to-br ${award.bgColor} ring-2 ring-purple-200 shadow-2xl`
-                    : 'bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-purple-50 shadow-lg hover:shadow-xl'
-                }`}
-                onMouseEnter={() => setActiveAward(index)}
+                className="group relative p-8 rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 transform bg-white hover:bg-gradient-to-br hover:from-gray-50 hover:to-purple-50 shadow-lg hover:shadow-xl"
               >
                 {/* Year badge */}
                 <div className="absolute -top-4 left-8">
                   <div
-                    className={`px-4 py-2 bg-gradient-to-r ${award.color} text-white text-sm font-bold rounded-full shadow-lg`}
+                    className={`px-4 py-2 bg-white text-[#2e0057] text-sm font-bold rounded-full shadow-lg`}
                   >
                     {award.year}
                   </div>

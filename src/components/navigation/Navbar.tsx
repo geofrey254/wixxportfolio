@@ -43,7 +43,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
-          ? 'backdrop-blur-md bg-white/10 dark:bg-black/20 shadow-lg shadow-purple-500/10 border-b border-white/10 dark:border-purple-500/10'
+          ? 'backdrop-blur-md bg-[#2e0057]/70 dark:bg-black/20 shadow-lg shadow-purple-500/10 border-b border-white/10 dark:border-purple-500/10'
           : 'bg-transparent'
       }`}
     >
@@ -83,7 +83,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`group relative px-4 py-2 font-medium transition-all duration-300 ${
-                    isScrolled ? 'text-gray-900 dark:text-white font-semibold' : 'text-white'
+                    isScrolled ? 'text-gray-200 dark:text-white font-semibold' : 'text-white'
                   }`}
                 >
                   <span className="relative z-10">{link.name}</span>

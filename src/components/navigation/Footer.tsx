@@ -71,7 +71,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#2e0057] via-[#1a0033] to-black dark:from-gray-900 dark:via-gray-950 dark:to-black rounded-4xl -mt-16 dark:border-t dark:border-white z-30 shadow-2xl overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-[#2e0057] via-[#1a0033] to-black dark:from-gray-900 dark:via-gray-950 dark:to-black rounded-t-4xl -mt-16 dark:border-t dark:border-white z-30 shadow-2xl overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/5 dark:bg-purple-400/5 rounded-full blur-3xl"></div>

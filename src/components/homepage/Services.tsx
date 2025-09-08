@@ -524,7 +524,7 @@ export default function Services() {
 
           <Link
             href="#contact"
-            className="inline-flex items-center justify-center gap-4 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-500 dark:to-blue-500 text-white py-4 px-8 rounded-2xl font-medium hover:shadow-2xl hover:shadow-purple-500/25 dark:hover:shadow-purple-400/25 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+            className="inline-flex items-center justify-center gap-4 bg-[#2e0057] text-white py-4 px-8 rounded-2xl font-medium hover:shadow-2xl hover:shadow-purple-500/25 dark:hover:shadow-purple-400/25 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
           >
             <motion.span
               className="absolute inset-0 bg-white/10"
