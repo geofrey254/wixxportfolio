@@ -10,8 +10,9 @@ const modak = Michroma({
 })
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  title: 'Wixx Studios | Animator & Content Creator Portfolio',
+  description:
+    'The official portfolio of Wixx Mangutha – animator and content creator. Explore projects that make pixels dance, characters breathe, and stories come alive through 2D/3D animation, motion graphics, and creative content.',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
