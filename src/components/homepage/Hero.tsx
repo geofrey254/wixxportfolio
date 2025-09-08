@@ -112,7 +112,7 @@ export default function Hero() {
       >
         {/* Animated Typing Text */}
         <motion.div className="text-center" variants={itemVariants}>
-          <div className="text-5xl md:text-7xl 2xl:text-9xl font-light text-purple-300 h-10 flex items-center">
+          <div className="text-3xl md:text-7xl 2xl:text-9xl font-light text-purple-300 h-10 flex items-center">
             <div className="w-4 md:w-12 h-1 md:h-2 bg-white" />{' '}
             <span className={`text-white font-bold w-full text-left`}>
               {currentText}

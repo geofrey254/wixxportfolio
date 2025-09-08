@@ -93,7 +93,10 @@ export default function ContactCTA() {
         </motion.div>
 
         {/* Quick Actions */}
-        <motion.div variants={itemVariants} className="flex justify-center items-center">
+        <motion.div
+          variants={itemVariants}
+          className="flex justify-center items-center mb-12 md:mb-0"
+        >
           {quickActions.map((action, index) => (
             <motion.a
               key={index}

@@ -36,7 +36,7 @@ export default function AboutContent() {
     <motion.section
       ref={ref}
       style={{ y }}
-      className="py-10 md:py-28 -mt-6 md:-mt-15 bg-white dark:bg-gray-900 dark:border-t dark:border-white  rounded-t-4xl relative z-30 overflow-hidden"
+      className="py-10 md:py-28 -mt-15 md:-mt-15 bg-white dark:bg-gray-900 dark:border-t dark:border-white  rounded-t-4xl relative z-30 overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-purple-100 to-transparent rounded-full blur-3xl opacity-50"></div>

@@ -24,7 +24,7 @@ export default function AboutHero() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
-      className="py-20 md:py-36 px-8 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white relative z-30 shadow-2xl overflow-hidden flex flex-col gap-8"
+      className="py-20 md:py-36 px-8 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white relative z-30 shadow-2xl overflow-hidden flex flex-col gap-12 md:gap-8"
     >
       <div className="w-full h-full flex flex-col md:flex-row justify-between gap-10">
         {/* left */}
@@ -47,7 +47,7 @@ export default function AboutHero() {
 
       <motion.div
         variants={fadeUp}
-        className="flex justify-between items-center flex-col md:flex-row gap-8 md:gap-0"
+        className="flex justify-between items-center flex-col md:flex-row gap-12 md:gap-0"
       >
         {/* experience */}
         <motion.div

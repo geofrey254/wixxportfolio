@@ -26,7 +26,7 @@ export default function Parallax() {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.3 }}
-      className="relative rounded-t-4xl h-[80vh] w-full -mt-16 md:-mt-32 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white z-30 shadow-2xl overflow-hidden"
+      className="relative rounded-t-4xl h-[80vh] w-full -mt-32 md:-mt-32 bg-[#2e0057] dark:bg-gray-900 dark:border-t dark:border-white z-30 shadow-2xl overflow-hidden"
     >
       {/* Overlay */}
       <motion.div
