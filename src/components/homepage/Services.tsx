@@ -14,7 +14,6 @@ import {
   Target,
   Star,
   Heart,
-  Hexagon,
 } from 'lucide-react'
 import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
@@ -52,7 +51,7 @@ export default function Services() {
         'Rigged Animation',
         'Storyboarding',
       ],
-      price: 'Starting at $500',
+      price: 'Starting at Kes 50,000',
       duration: '1-3 weeks',
       gradient: 'from-purple-500 to-pink-500',
       bgGradient: 'bg-gradient-to-br from-purple-500/20 to-pink-500/20',
@@ -72,7 +71,7 @@ export default function Services() {
       description:
         'Eye-catching motion graphics that enhance your brand identity. Perfect for logos, infographics, and user interface animations.',
       features: ['Logo Animation', 'Infographics', 'UI/UX Animation', 'Explainer Videos'],
-      price: 'Starting at $300',
+      price: 'Starting at Kes 30,000',
       duration: '3-7 days',
       gradient: 'from-blue-500 to-cyan-500',
       bgGradient: 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20',
@@ -97,7 +96,7 @@ export default function Services() {
         'Lighting & Rendering',
         'Camera Animation',
       ],
-      price: 'Starting at $800',
+      price: 'Starting at Kes 80,000',
       duration: '2-4 weeks',
       gradient: 'from-emerald-500 to-teal-500',
       bgGradient: 'bg-gradient-to-br from-emerald-500/20 to-teal-500/20',
@@ -117,7 +116,7 @@ export default function Services() {
       description:
         'Complete content packages for your social media and marketing needs. Engaging animations optimized for different platforms.',
       features: ['Social Media Content', 'Ad Animations', 'Template Creation', 'Brand Consistency'],
-      price: 'Starting at $200',
+      price: 'Starting at Kes 20,000',
       duration: '1-2 weeks',
       gradient: 'from-orange-500 to-red-500',
       bgGradient: 'bg-gradient-to-br from-orange-500/20 to-red-500/20',
@@ -137,63 +136,6 @@ export default function Services() {
     { icon: Award, value: '5+', label: 'Years Experience' },
     { icon: Zap, value: '24h', label: 'Response Time' },
   ]
-
-  // Floating animation elements
-  const FloatingElements = () => (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Animated shapes */}
-      <motion.div
-        className="absolute top-20 left-10 w-16 h-16 border-2 border-purple-300/30 dark:border-purple-400/30 rounded-full"
-        animate={{
-          y: [-10, 10, -10],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
-      <motion.div
-        className="absolute top-40 right-20 w-8 h-8 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-lg"
-        animate={{
-          y: [10, -10, 10],
-          rotate: [360, 180, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
-      <motion.div
-        className="absolute bottom-40 left-1/4 w-12 h-12"
-        animate={{
-          y: [-15, 15, -15],
-          x: [-5, 5, -5],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      >
-        <Hexagon className="w-full h-full text-emerald-400/40 dark:text-emerald-300/40" />
-      </motion.div>
-      <motion.div
-        className="absolute top-60 right-1/3 w-6 h-6 bg-gradient-to-r from-pink-400 to-red-400 rounded-full"
-        animate={{
-          scale: [1, 1.3, 1],
-          y: [0, -20, 0],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
-    </div>
-  )
 
   return (
     <motion.section
@@ -220,8 +162,6 @@ export default function Services() {
         />
       </div>
 
-      <FloatingElements />
-
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Enhanced Header with animated elements */}
         <motion.div
@@ -240,10 +180,9 @@ export default function Services() {
             <Star className="w-6 h-6 text-purple-400/60 dark:text-purple-300/60" />
           </motion.div>
 
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white relative">
-            My
-            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 dark:from-purple-400 dark:via-pink-400 dark:to-blue-400 bg-clip-text text-transparent relative">
-              {' '}
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-[#2e0057] dark:text-white relative">
+            Our{' '}
+            <span className="text-[#2e0057] dark:text-white relative">
               Services
               <motion.div
                 className="absolute -right-8 top-0 w-4 h-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"
@@ -305,9 +244,7 @@ export default function Services() {
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              className={`group relative p-8 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-transparent hover:shadow-2xl hover:shadow-purple-500/10 dark:hover:shadow-purple-400/10 transition-all duration-500 cursor-pointer overflow-hidden ${
-                hoveredService === service.id ? service.bgGradient : ''
-              }`}
+              className={`group relative p-8 rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-transparent hover:shadow-2xl hover:shadow-purple-500/10 dark:hover:shadow-purple-400/10 transition-all duration-500 cursor-pointer overflow-hidden`}
               onMouseEnter={() => setHoveredService(service.id)}
               onMouseLeave={() => setHoveredService(null)}
               initial={{ opacity: 0, y: 30 }}
@@ -318,25 +255,11 @@ export default function Services() {
             >
               {/* Enhanced Service Icon with animation */}
               <motion.div
-                className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${service.gradient} mb-6 relative`}
+                className={`inline-flex p-3 rounded-xl bg-gradient-to-r bg-[#2e0057] mb-6 relative`}
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ duration: 0.3 }}
               >
                 <service.icon className="w-6 h-6 text-white" />
-
-                {/* Sparkle effect */}
-                <motion.div
-                  className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-100"
-                  animate={
-                    hoveredService === service.id
-                      ? {
-                          scale: [0, 1, 0],
-                          opacity: [0, 1, 0],
-                        }
-                      : {}
-                  }
-                  transition={{ duration: 1, repeat: Infinity, delay: 0.5 }}
-                />
               </motion.div>
 
               {/* Service Content */}
@@ -392,11 +315,6 @@ export default function Services() {
                   {service.price}
                 </div>
               </div>
-
-              {/* Enhanced Hover Effect Border */}
-              <div
-                className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none`}
-              ></div>
             </motion.div>
           ))}
         </div>
@@ -466,7 +384,7 @@ export default function Services() {
                 )}
 
                 <motion.div
-                  className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 text-white font-bold text-xl rounded-full mb-4"
+                  className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-[#2e0057] dark:bg-white text-white dark:text-[#2e0057] font-bold text-xl rounded-full mb-4"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -511,17 +429,6 @@ export default function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          {/* Decorative elements */}
-          <motion.div
-            className="absolute -top-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
-            animate={{ y: [-5, 5, -5] }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-          >
-            <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-            <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-            <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-          </motion.div>
-
           <Link
             href="#contact"
             className="inline-flex items-center justify-center gap-4 bg-[#2e0057] text-white py-4 px-8 rounded-2xl font-medium hover:shadow-2xl hover:shadow-purple-500/25 dark:hover:shadow-purple-400/25 transition-all duration-300 hover:scale-105 relative overflow-hidden group"

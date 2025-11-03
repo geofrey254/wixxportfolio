@@ -7,9 +7,7 @@ import {
   Mail,
   Phone,
   MapPin,
-  Github,
   Linkedin,
-  Twitter,
   Instagram,
   Youtube,
   ArrowUp,
@@ -37,14 +35,12 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { name: 'GitHub', icon: Github, href: 'https://github.com', color: 'hover:text-gray-400' },
     {
       name: 'LinkedIn',
       icon: Linkedin,
       href: 'https://linkedin.com',
       color: 'hover:text-blue-400',
     },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com', color: 'hover:text-sky-400' },
     {
       name: 'Instagram',
       icon: Instagram,
@@ -126,18 +122,18 @@ export default function Footer() {
                     href="mailto:hello@youranimation.com"
                     className="hover:text-purple-400 transition-colors"
                   >
-                    hello@youranimation.com
+                    hello@wixx.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 dark:text-gray-400">
                   <Phone className="w-4 h-4 text-purple-400" />
                   <a href="tel:+1234567890" className="hover:text-purple-400 transition-colors">
-                    +1 (234) 567-8900
+                    +254 712 345 678
                   </a>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300 dark:text-gray-400">
                   <MapPin className="w-4 h-4 text-purple-400" />
-                  <span>New York, NY</span>
+                  <span>Nairobi, KE</span>
                 </div>
               </div>
             </motion.div>
@@ -215,7 +211,7 @@ export default function Footer() {
                 <motion.button
                   onClick={handleNewsletterSubmit}
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 disabled:opacity-70"
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-all duration-300 disabled:opacity-70 cursor-pointer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -289,7 +285,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               {/* Copyright */}
               <div className="flex items-center space-x-2 text-gray-400 dark:text-gray-500 text-sm">
-                <span>© 2025 YourBrand. Made with</span>
+                <span>© 2025 WixxStudios. Made with</span>
                 <Heart className="w-4 h-4 text-red-400 fill-current animate-pulse" />
                 <span>by Maina Geofrey</span>
               </div>

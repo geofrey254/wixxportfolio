@@ -101,14 +101,14 @@ export default function ContactInfo() {
         className="bg-gradient-to-br from-[#2e0057]/5 to-purple-100/50 dark:from-gray-800 dark:to-gray-700 p-8 rounded-3xl border border-[#2e0057]/10 dark:border-gray-600"
       >
         <div className="flex items-start gap-6">
-          <div className="p-4 bg-gradient-to-r from-[#2e0057] to-purple-700 rounded-2xl shadow-lg">
+          <div className="p-4 bg-[#2e0057] rounded-2xl shadow-lg">
             <MapPin className="w-8 h-8 text-white" />
           </div>
           <div>
             <h3 className="text-2xl font-bold text-[#2e0057] dark:text-white mb-3">Our Studio</h3>
             <div className="space-y-2 text-gray-600 dark:text-gray-300">
               <p>123 Creative Avenue</p>
-              <p>Design District, Nairobi</p>
+              <p>Studio, Nairobi</p>
               <p>Kenya</p>
             </div>
             <motion.div whileHover={{ scale: 1.05 }} className="inline-block mt-4">

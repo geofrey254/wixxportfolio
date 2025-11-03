@@ -80,9 +80,9 @@ export default function ContactCTA() {
         className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         {/* Header Section */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+        <motion.div variants={itemVariants} className="text-center">
           <h2 className="text-4xl lg:text-6xl font-black mb-6">
-            <span className="bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
               Ready to Start?
             </span>
           </h2>
@@ -90,30 +90,6 @@ export default function ContactCTA() {
             Join over 150+ satisfied clients who trusted us with their digital transformation. Let
             {"'"}s create something extraordinary together.
           </p>
-        </motion.div>
-
-        {/* Quick Actions */}
-        <motion.div
-          variants={itemVariants}
-          className="flex justify-center items-center mb-12 md:mb-0"
-        >
-          {quickActions.map((action, index) => (
-            <motion.a
-              key={index}
-              href={action.href}
-              whileHover={{ scale: 1.05, y: -5 }}
-              whileTap={{ scale: 0.95 }}
-              className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-16 py-2 text-center hover:bg-white/20 transition-all duration-300"
-            >
-              <div
-                className={`inline-flex items-center justify-center p-2 bg-gradient-to-r ${action.color} rounded-2xl mb-4 shadow-lg group-hover:shadow-xl transition-shadow duration-300`}
-              >
-                <action.icon className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">{action.title}</h3>
-              <p className="text-purple-200 dark:text-gray-300">{action.description}</p>
-            </motion.a>
-          ))}
         </motion.div>
       </motion.div>
     </section>

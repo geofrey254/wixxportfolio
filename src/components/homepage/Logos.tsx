@@ -104,12 +104,8 @@ export default function Logos() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-4">
-            Trusted by
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              {' '}
-              Amazing Brands
-            </span>
+          <h2 className="text-center text-2xl md:text-5xl font-bold text-white mb-4">
+            Trusted by Amazing Brands
           </h2>
           <p className="text-gray-300 dark:text-gray-400 text-lg">
             We{"'"}ve had the privilege to work with some incredible companies

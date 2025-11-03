@@ -115,11 +115,7 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white dark:text-white">
-            Featured
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              {' '}
-              Projects
-            </span>
+            Featured Projects
           </h2>
           <p className="text-base md:text-xl text-gray-300 dark:text-gray-400 leading-relaxed max-w-3xl mx-auto">
             Explore our latest animation works. Hover over project titles to see details, or click

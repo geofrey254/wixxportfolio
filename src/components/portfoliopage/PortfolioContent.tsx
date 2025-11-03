@@ -123,9 +123,7 @@ export default function PortfolioSection() {
       {/* Header Section */}
       <div className="relative z-10 pt-16 pb-8 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent mb-6">
-            Featured Works
-          </h2>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">Featured Works</h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
             Discover our latest creative projects and visual masterpieces
           </p>
@@ -198,7 +196,7 @@ export default function PortfolioSection() {
                         href={item.instagramUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-white hover:text-purple-200 transition-all duration-300 text-sm font-medium bg-gradient-to-r from-purple-600/80 to-pink-600/80 backdrop-blur-sm px-4 py-2 rounded-full hover:from-purple-500/90 hover:to-pink-500/90 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-purple-500/25 transform hover:scale-105"
+                        className="inline-flex items-center gap-2 text-[#2e0057] hover:text-purple-200 transition-all duration-300 text-sm font-medium bg-white backdrop-blur-sm px-4 py-2 rounded-full hover:from-purple-500/90 hover:to-pink-500/90 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-purple-500/25 transform hover:scale-105"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Watch Video
@@ -233,7 +231,7 @@ export default function PortfolioSection() {
                   className={`w-3 h-3 rounded-full transition-all duration-300 border border-white/30
                     ${
                       currentSlide === index
-                        ? 'bg-gradient-to-r from-purple-500 to-pink-500 scale-125 shadow-lg shadow-purple-500/50'
+                        ? 'bg-white scale-125 shadow-lg shadow-purple-500/50'
                         : 'bg-white/20 hover:bg-white/40 hover:scale-110'
                     }
                   `}

@@ -302,11 +302,11 @@ export default function ContactForm() {
             disabled={isSubmitting}
             whileHover={{ scale: isSubmitting ? 1 : 1.02, y: isSubmitting ? 0 : -2 }}
             whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-            className={`w-full py-4 px-8 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg
+            className={`w-full py-4 px-8 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg cursor-pointer
               ${
                 isSubmitting
                   ? 'bg-gray-400 text-gray-700 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-[#2e0057] to-purple-700 hover:from-purple-700 hover:to-[#2e0057] text-white shadow-purple-500/25 hover:shadow-xl'
+                  : 'bg-[#2e0057] hover:from-purple-700 hover:to-[#2e0057] text-white shadow-purple-500/25 hover:shadow-xl'
               }`}
           >
             {isSubmitting ? (

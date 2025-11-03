@@ -54,9 +54,9 @@ export default function AboutContent() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-4">
             <span>About Our Studio</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-light text-gray-900 mb-6 leading-tight flex flex-col justify-center items-center">
+          <h2 className="text-4xl md:text-6xl font-light text-gray-900 dark:text-white mb-6 leading-tight flex flex-col justify-center items-center">
             Where Stories Meet
-            <span className="text-white font-bold bg-[#2e0057] p-2 rounded-3xl">
+            <span className="text-[#2e0057] font-bold bg-white p-2 rounded-3xl mt-2">
               Stunning Animation
             </span>
           </h2>
@@ -67,14 +67,16 @@ export default function AboutContent() {
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Our Creative Journey</h3>
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-300">
+                Our Creative Journey
+              </h3>
+              <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
                 Founded with a simple belief that animation should do more than just move – it
                 should move people. Our studio has grown from a one-person passion project into a
                 creative powerhouse that brings ideas to life through cutting-edge animation
                 techniques and unbounded imagination.
               </p>
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
                 Every project we touch becomes a canvas for innovation. From brand commercials that
                 stop scrollers in their tracks to explainer videos that make complex ideas crystal
                 clear, we craft visual experiences that resonate, engage, and inspire action.
@@ -118,7 +120,7 @@ export default function AboutContent() {
 
             <motion.div
               initial="hidden"
-              className="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
+              className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
             >
               <div className="w-16 h-16 bg-[#2e0057] rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiPlay size={24} className="text-white" />
@@ -129,23 +131,23 @@ export default function AboutContent() {
 
             <motion.div
               whileInView="visible"
-              className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
+              className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
             >
               <div className="w-16 h-16 bg-[#2e0057] rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiTrendingUp size={24} className="text-white" />
               </div>
-              <h4 className="text-3xl font-bold text-pink-900 mb-2">98%</h4>
+              <h4 className="text-3xl font-bold text-indigo-900 mb-2">98%</h4>
               <p className="text-[#2e0057] font-medium">Client Satisfaction</p>
             </motion.div>
 
             <motion.div
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
+              className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl text-center transform hover:scale-105 transition-transform duration-300"
             >
               <div className="w-16 h-16 bg-[#2e0057] rounded-full flex items-center justify-center mx-auto mb-4">
                 <FiStar size={24} className="text-white" />
               </div>
-              <h4 className="text-3xl font-bold text-orange-900 mb-2">15+</h4>
+              <h4 className="text-3xl font-bold text-indigo-900 mb-2">15+</h4>
               <p className="text-[#2e0057] font-medium">Awards Won</p>
             </motion.div>
           </motion.div>
